@@ -1,0 +1,161 @@
+body{
+    text-align: center;
+    font-size: x-large;
+    font-family: arial, sans-serif;
+    background-image: url("imagens/background.png");
+    color: white;
+    margin: 0px;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    transition: 1s ease-in-out;
+}
+
+p{
+    margin: 10px;
+}
+
+p:hover{
+    animation: rainbow 2s infinite;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+    font-size: large;
+    background-color: #282a2f;
+    transition: all 2s ease-in-out;
+    border: 1px solid green;
+}
+
+tr {
+    transition: all 1s ease-in-out;
+}
+
+td {
+    text-align: left;
+    border-top: 1px solid green;
+    transition: all 1s ease-in-out;
+    padding: 2%;
+}
+
+th{
+    border: 2px solid #008CBA;
+    background-color: #36393f;
+    transition: all 1s ease-in-out;
+    padding: 2%;
+}
+
+button{
+    font-size: x-large;
+    font-family: arial, sans-serif;
+    background-color: #36393f;
+    color: white;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    padding: 1%;
+    text-align: center;
+    width: 90%;
+    margin: 4% !important;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+button:hover{
+    border-color: #55d5ff;
+}
+
+input{
+    font-size: x-large;
+    font-family: arial, sans-serif;
+    border: solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: #36393f;
+    transition: all .2s ease-in-out;
+    padding: 1%;
+    margin: 0.5%;
+    text-align: center;
+    width: 90%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover{
+    transform: scale(1.15) !important;
+}
+
+input:focus{
+    outline: none !important;
+}
+
+.tudo{
+    word-wrap: unset;
+    text-align: center;
+    padding: 2.5%;
+    background-color: #282a2f;
+    width: 50%;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: solid black;
+    border-radius: 25px;
+}
+
+.result{
+    word-wrap: unset;
+    text-align: center;
+    padding: 1%;
+    background-color: #282a2f;
+    overflow: auto;
+    margin: auto;
+    border: solid black;
+    border-radius: 25px;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all 1s ease-in-out;
+}
+
+.center {
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
+
+#inferno{
+    padding: 0px;
+    margin: 0px;
+}
+
+#inferno:hover{
+    animation: rainbow 2s infinite;
+}
+
+#inputIMC:hover{
+    cursor: url("imagens/hqdefault111.png"), auto;
+}
+
+#tudimtudim{
+    transition: all 2s ease-in-out;
+}
+
+@keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+    30%{color: CadetBlue;}
+	40%{color: yellow;}
+    50%{color: coral;}
+	60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+	100%{color: orange;}
+}

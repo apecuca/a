@@ -36,7 +36,7 @@ function calcular(){
                 setTimeout(() => {pesoS.style = "border-color: black;"}, 600);
                 setTimeout(() => {calculista.style = "border-color: #008CBA;"}, 600);
             }
-            setTimeout(() => {calculista.style = ":hover{ border-color: #55d5ff; }"}, 800);
+            setTimeout(() => {calculista.style = ":hover{ border-color: #55d5ff; }"}, 600);
         }else{
             calculista.style = "border-color: green;";
             IMC.value = calc;
@@ -85,7 +85,7 @@ function limpar(){
                 pesoS.style = "border-color: red";
                 setTimeout(() => {pesoS.style = "border-color: black;"}, 600);
             }
-            clean.style = ":hover{ border-color: #55d5ff; }";      
+            setTimeout(() => {clean.style = ":hover{ border-color: #55d5ff; }"}, 600);        
         }else{
             clean.style = "border-color: green;";
             setTimeout(() => {clean.style = "border-color: #008CBA;"}, 600);

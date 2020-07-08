@@ -1,5 +1,6 @@
 function onCreate(){
     console.log("Ver 1.12 -> final <-");
+    console.log("a");
     var x = document.getElementById("inputMT");
     var y = document.getElementById("inputKG");
     var z = document.getElementById("inputIMC");

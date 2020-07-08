@@ -101,14 +101,15 @@ function limpar(){
 
 function changeBack(tipo){
     var audiouwu = document.getElementById("myAudio");
+    var tudim = document.getElementById("tudimtudim");
     if(tipo==1){
         document.body.style = "background-image: url('imagens/backgroundofda.gif')";
-        document.getElementById("tudimtudim").style = "opacity: 0%";
+        tudim.style = "opacity: 0%";
         audiouwu.load();
         audiouwu.play();
     }else{
         document.body.style.backgroundImage = "url('imagens/background.png')";
-        document.getElementById("tudimtudim").style = "opacity: 100%";
+        tudim.style = "opacity: 100%";
         audiouwu.pause();
     }
 }

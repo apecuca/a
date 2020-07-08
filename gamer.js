@@ -27,21 +27,21 @@ function calcular(){
     try {
         if(altura.length==0 || peso.length==0){
             if(altura.length==0){
-                calculista.style = "border-color: red;";
                 alturaS.style = "border-color: red";
                 setTimeout(() => {alturaS.style = "border-color: black;"}, 600);
                 setTimeout(() => {calculista.style = "border-color: #008CBA;"}, 600);
             }
             if(peso.length==0){
-                calculista.style = "border-color: red;";
                 pesoS.style = "border-color: red";
                 setTimeout(() => {pesoS.style = "border-color: black;"}, 600);
                 setTimeout(() => {calculista.style = "border-color: #008CBA;"}, 600);
-            }        
+            }
+            setTimeout(() => {calculista.style = ":hover{ border-color: #55d5ff; }"}, 800);
         }else{
             calculista.style = "border-color: green;";
-            setTimeout(() => {calculista.style = "border-color: #008CBA;"}, 600);
             IMC.value = calc;
+            setTimeout(() => {calculista.style = "border-color: #008CBA;"}, 600);
+            setTimeout(() => {calculista.style = ":hover{ border-color: #55d5ff; }"}, 600);
         }
         if(calc<18.5){
             document.getElementById("IMC01").style = "background-color: rgba(255, 255, 255, 0.5);";
@@ -84,10 +84,12 @@ function limpar(){
             if(peso.length==0){
                 pesoS.style = "border-color: red";
                 setTimeout(() => {pesoS.style = "border-color: black;"}, 600);
-            }        
+            }
+            setTimeout(() => {clean.style = ":hover{ border-color: #55d5ff; }"}, 600);        
         }else{
             clean.style = "border-color: green;";
             setTimeout(() => {clean.style = "border-color: #008CBA;"}, 600);
+            setTimeout(() => {clean.style = ":hover{ border-color: #55d5ff; }"}, 600);  
             alturaS.value = "";
             pesoS.value = "";
             IMC.value = "";

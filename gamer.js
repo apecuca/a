@@ -48,15 +48,15 @@ function calcular(){
             document.getElementById("IMC01").style = "background-color: rgba(255, 255, 255, 0.5);";
             setTimeout(() => { document.getElementById("IMC01").style = "background-color: #282a2f;"; }, 1000);
         }
-        if(calc>18.5 && calc<24.9){
+        if(calc>18.5 && calc<25){
             document.getElementById("IMC02").style = "background-color: rgba(255, 255, 255, 0.5);";
             setTimeout(() => { document.getElementById("IMC02").style = "background-color: #282a2f;"; }, 1000);
         }
-        if(calc>25 && calc<29.9){
+        if(calc>25 && calc<30){
             document.getElementById("IMC1").style = "background-color: rgba(255, 255, 255, 0.5);";
             setTimeout(() => { document.getElementById("IMC1").style = "background-color: #282a2f;"; }, 1000);
         }
-        if(calc>30 && calc<39.9){
+        if(calc>30 && calc<40){
             document.getElementById("IMC2").style = "background-color: rgba(255, 255, 255, 0.5);";
             setTimeout(() => { document.getElementById("IMC2").style = "background-color: #282a2f;"; }, 1000);
         }

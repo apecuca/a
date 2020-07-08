@@ -24,7 +24,7 @@ function calcular(){
     let pesoS = document.getElementById("inputKG")
     var IMC = document.getElementById("inputIMC");
     var calculista = document.getElementById("buttCalc");
-    let calc = peso/((altura/100)*(altura/100));
+    let calc = peso/(altura*altura);
     try {
         if(altura.length==0 || peso.length==0){
             if(altura.length==0){

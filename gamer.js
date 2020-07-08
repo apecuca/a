@@ -85,7 +85,7 @@ function limpar(){
                 pesoS.style = "border-color: red";
                 setTimeout(() => {pesoS.style = "border-color: black;"}, 600);
             }
-            setTimeout(() => {clean.style = ":hover{ border-color: #55d5ff; }"}, 600);        
+            clean.style = ":hover{ border-color: #55d5ff; }";      
         }else{
             clean.style = "border-color: green;";
             setTimeout(() => {clean.style = "border-color: #008CBA;"}, 600);
